@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff1e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        img {
+            border-radius: 0%;
+            width: 300px;
+            height: 275px;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            display: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="huy.jpg" alt="My Picture">
+        <h1>Hello, I'm Dinh Gia Huy
+        </h1>
+        <p id="extraInfo">I am a student at VLU
+            <br>My student code: 21748020138
+            
+            <br>My email: huy.2174802010318@vanlanguni.vn
+            <br>I'm live in Ho Chi Minh city at district 5 
+            <br>My hobbies about to hagging out with friends, playing some video game and doing sports.
+        </p>
+       
+        
+        <button onclick="showMore()">Learn More About Me</button>
+
+        <H1>Ket Qua Lab1</H1>
+        <img src="lab1.png" alt="My Picture">
+    </div>
+
+    <script>
+        function showMore() {
+            var extraInfo = document.getElementById('extraInfo');
+            if (extraInfo.style.display === "none") {
+                extraInfo.style.display = "block";
+            } else {
+                extraInfo.style.display = "none";
+            }
+        }
+    </script>
+
+ 
+</body>
+</html>
